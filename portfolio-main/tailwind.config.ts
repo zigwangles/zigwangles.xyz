@@ -25,6 +25,7 @@ export default {
         accent: '#1d4ed8',
         background: '#eff6ff',
         foreground: '#1e3a8a',
+        border: 'hsl(214, 32%, 91%),
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
           foreground: 'hsl(var(--destructive-foreground))'
