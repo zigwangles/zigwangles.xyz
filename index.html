@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moonydev</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <main id="content" style="display: none;">
+    <h1>Welcome to Moonydev's Portfolio</h1>
+    <p>A skilled Front-End iOS Developer bringing creativity and precision to every project.</p>
+    <div class="glass">
+      <p>This is a demonstration of the glass effect.</p>
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      setTimeout(() => {
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
