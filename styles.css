@@ -139,7 +139,6 @@ body {
     width: 0; /* Default to 0 */
     transition: width 1.5s ease-in-out; /* Smooth animation */
 }
-}
 
 /* Glassmorphic Container */
 .container {
