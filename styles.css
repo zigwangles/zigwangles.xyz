@@ -102,6 +102,7 @@ body {
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -130,8 +131,6 @@ body {
 }
 
 /* Wide Button */
-.wide {
-    display: block;
-    width: 100%;
-    margin-top: 10px;
+.buttons .btn {
+    width: 130px; /* Matches all buttons */
 }
