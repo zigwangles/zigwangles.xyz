@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moonydev</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="loader">
-    <div class="spinner"></div>
-  </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
 
-  <main id="content" style="display: none;">
-    <h1>Welcome to Moonydev's Portfolio</h1>
-    <p>A skilled Front-End iOS Developer bringing creativity and precision to every project.</p>
-    <div class="glass">
-      <p>This is a demonstration of the glass effect.</p>
-    </div>
-  </main>
+    <header>
+        <div class="glass-card">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm [Your Name], a passionate web developer.</p>
+            <a href="projects.html" class="btn">View My Work</a>
+        </div>
+    </header>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      setTimeout(() => {
-        document.getElementById('loader').style.display = 'none';
-        document.getElementById('content').style.display = 'block';
-      }, 2000);
-    });
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
