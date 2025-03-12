@@ -12,7 +12,7 @@
 
 body {
     background: url('assets/images/IMG_1580.jpeg') no-repeat center center/cover;
-    min-height: 100vh; /* Ensure full viewport height */
+    height: 100vh; /* Ensure full viewport height */
     display: flex;
     flex-direction: column;
     align-items: center;
