@@ -5,30 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <h1 class="logo">moonydev</h1>
+        <div class="menu-icon" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <!-- Dropdown Menu -->
+    <div class="dropdown-menu" id="dropdown-menu">
+        <div class="close-icon" id="close-menu">
+            <i class="fas fa-times"></i>
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="skills.html">Skills</a></li>
             <li><a href="projects.html">Projects</a></li>
         </ul>
-    </nav>
+    </div>
 
-    <section class="glass-card">
-        <h1>Projects</h1>
-        <div class="project">
-            <h2>Project 1</h2>
-            <p>Description of your project</p>
-            <a href="#" class="btn">View Project</a>
+    <!-- Projects Section -->
+    <div class="projects-container">
+        <h2 class="projects-title">Projects</h2>
+
+        <!-- Project Card 1 -->
+        <div class="project-card">
+            <img src="assets/images/cherryarchives.png" alt="CherryArchives">
+            <h3>CherryArchives</h3>
+            <div class="project-links">
+                <a href="https://example.com" target="_blank" class="btn"><i class="fas fa-external-link-alt"></i> Visit Project</a>
+                <a href="https://github.com/example" target="_blank" class="btn github"><i class="fab fa-github"></i> View GitHub</a>
+            </div>
         </div>
-        <div class="project">
-            <h2>Project 2</h2>
-            <p>Description of your project</p>
-            <a href="#" class="btn">View Project</a>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+            <img src="assets/images/project2.png" alt="Project 2">
+            <h3>Project Name</h3>
+            <div class="project-links">
+                <a href="https://example.com" target="_blank" class="btn"><i class="fas fa-external-link-alt"></i> Visit Project</a>
+                <a href="https://github.com/example" target="_blank" class="btn github"><i class="fab fa-github"></i> View GitHub</a>
+            </div>
         </div>
-    </section>
+
+    </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
