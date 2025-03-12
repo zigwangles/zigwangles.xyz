@@ -11,7 +11,7 @@
 }
 
 body {
-    background: url('assets/images/IMG_1580.jpeg') no-repeat center center/cover;
+    background: url('assets/images/IMG_1590.jpeg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -106,7 +106,7 @@ body {
 }
 
 .btn {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(105, 185, 245, 0.8); /* Light blue color */
     color: white;
     border: none;
     padding: 12px 18px;
@@ -127,7 +127,7 @@ body {
 
 /* Hover Effect */
 .btn:hover {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(58, 123, 213, 0.9); /* Slightly darker blue */
 }
 
 /* Wide Button */
