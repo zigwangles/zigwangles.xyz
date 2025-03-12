@@ -164,6 +164,60 @@ body {
     margin-top: -70px;
 }
 
+/* Projects Section */
+.projects-container {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.projects-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d45eff;
+    margin-bottom: 20px;
+}
+
+/* Project Card */
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.project-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Project Links */
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
 /* Buttons */
 .buttons {
     display: flex;
@@ -196,6 +250,10 @@ body {
 /* Hover Effect */
 .btn:hover {
     background: rgba(58, 123, 213, 0.9);
+}
+
+.btn.github {
+    background: rgba(0, 0, 0, 0.8);
 }
 
 /* Wide Button */
