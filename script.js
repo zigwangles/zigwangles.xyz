@@ -11,10 +11,18 @@ document.addEventListener("DOMContentLoaded", function() {
         dropdownMenu.classList.remove("active");
     });
 
-    // Close menu when clicking outside
-    document.addEventListener("click", function(event) {
-        if (!dropdownMenu.contains(event.target) && !menuToggle.contains(event.target)) {
-            dropdownMenu.classList.remove("active");
-        }
-    });
+    // Skill Bar Animation
+    const progressBars = document.querySelectorAll(".progress-bar");
+
+    function animateBars() {
+        progressBars.forEach(bar => {
+            const width = bar.style.width;
+            bar.style.width = "0%";
+            setTimeout(() => {
+                bar.style.width = width;
+            }, 300);
+        });
+    }
+
+    animateBars();
 });
