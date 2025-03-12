@@ -11,18 +11,30 @@ document.addEventListener("DOMContentLoaded", function() {
         dropdownMenu.classList.remove("active");
     });
 
-    // Skill Bar Animation
+    // Progress Bar Animation on Scroll
     const progressBars = document.querySelectorAll(".progress-bar");
-
+    
     function animateBars() {
         progressBars.forEach(bar => {
-            const width = bar.style.width;
-            bar.style.width = "0%";
+            const width = bar.getAttribute("data-width"); // Get width from data attribute
+            bar.style.width = "0%"; // Reset before animation
             setTimeout(() => {
-                bar.style.width = width;
+                bar.style.width = width; // Animate to the final width
             }, 300);
         });
     }
 
-    animateBars();
+    function checkScroll() {
+        const skillsSection = document.querySelector(".skills-container");
+        const sectionPos = skillsSection.getBoundingClientRect().top;
+        const screenPos = window.innerHeight / 1.3;
+
+        if (sectionPos < screenPos) {
+            animateBars();
+            window.removeEventListener("scroll", checkScroll); // Run animation only once
+        }
+    }
+
+    window.addEventListener("scroll", checkScroll);
+    checkScroll(); // Check if already in view on page load
 });
