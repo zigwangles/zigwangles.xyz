@@ -11,14 +11,16 @@ document.addEventListener("DOMContentLoaded", function() {
         dropdownMenu.classList.remove("active");
     });
 
-    // Progress Bar Animation on Scroll
+    // Progress Bar Animation (Page Load & Scroll)
     const progressBars = document.querySelectorAll(".progress-bar");
-    
+
     function animateBars() {
         progressBars.forEach(bar => {
-            const width = bar.getAttribute("data-width"); // Get width from data attribute
-            bar.style.width = "0%"; // Reset before animation
+            const width = bar.getAttribute("data-width"); // Get final width
+            bar.style.width = "0%"; // Reset width to 0 before animation
+
             setTimeout(() => {
+                bar.style.transition = "width 1.5s ease-in-out";
                 bar.style.width = width; // Animate to the final width
             }, 300);
         });
@@ -35,6 +37,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+    // Run animation on page load
+    animateBars();
+
+    // Run animation on scroll
     window.addEventListener("scroll", checkScroll);
-    checkScroll(); // Check if already in view on page load
 });
