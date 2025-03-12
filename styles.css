@@ -12,13 +12,13 @@
 
 body {
     background: url('assets/images/IMG_1580.jpeg') no-repeat center center/cover;
-    height: 100vh;
+    min-height: 100vh; /* Ensure full viewport height */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Prevents content from being stuck */
     color: white;
-    overflow: hidden;
+    overflow-y: auto; /* Enables scrolling */
 }
 
 /* Navbar */
@@ -187,7 +187,7 @@ body {
     -webkit-backdrop-filter: blur(15px);
     border-radius: 15px;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Increased margin to separate projects */
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
@@ -201,7 +201,6 @@ body {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
-}
 
 .project-card h3 {
     font-size: 20px;
