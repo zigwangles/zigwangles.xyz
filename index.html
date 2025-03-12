@@ -9,13 +9,27 @@
 </head>
 <body>
 
+    <!-- Navigation Bar -->
     <div class="navbar">
-        <h1 class="logo">zigwangles</h1>
-        <div class="menu-icon">
+        <h1 class="logo">moonydev</h1>
+        <div class="menu-icon" id="menu-toggle">
             <i class="fas fa-bars"></i>
         </div>
     </div>
 
+    <!-- Dropdown Menu -->
+    <div class="dropdown-menu" id="dropdown-menu">
+        <div class="close-icon" id="close-menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
     <div class="container">
         <div class="profile-image">
             <img src="IMG_1454.jpeg" alt="Profile Image">
@@ -34,6 +48,8 @@
             <button class="btn"><i class="fab fa-spotify"></i> Spotify</button>
         </div>
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
